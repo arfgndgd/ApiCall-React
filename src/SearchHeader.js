@@ -1,13 +1,13 @@
 function SearchHeader({search}) {
 
-    const handelFormSubmit = (event) => {
+    const handleFormSubmit = (event) => {
         event.preventDefault(); //engellemek => gönderdiğin özelliğin default özelliğini engelle
         search('can');
     }
 
     return (
         <div className="searchDiv">
-            <form onSubmit={handelFormSubmit}>
+            <form onSubmit={handleFormSubmit}>
                 <label>Ne Arıyorsunuz?</label>
                 <input />
             </form>
